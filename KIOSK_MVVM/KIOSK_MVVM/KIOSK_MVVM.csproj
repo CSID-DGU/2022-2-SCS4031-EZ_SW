@@ -8,6 +8,41 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <EmbeddedResource Remove="Resources\Resource.resx" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Image\Beverage\cider.jpg" />
+	  <None Remove="Resources\Image\Beverage\cola.jpg" />
+	  <None Remove="Resources\Image\Beverage\iceAmericano.jpg" />
+	  <None Remove="Resources\Image\Beverage\mountainDew.jpg" />
+	  <None Remove="Resources\Image\Beverage\orangeJuice.jpg" />
+	  <None Remove="Resources\Image\Beverage\strawberryJuice.jpg" />
+	  <None Remove="Resources\Image\Beverage\watermelonJuice.jpg" />
+	  <None Remove="Resources\Image\Burger\bulgogiBurger.jpg" />
+	  <None Remove="Resources\Image\Burger\cheeseBurger.jpg" />
+	  <None Remove="Resources\Image\Burger\chickenBurger.jpg" />
+	  <None Remove="Resources\Image\Burger\pizzaBurger.jpg" />
+	  <None Remove="Resources\Image\Burger\shrimpBurger.jpg" />
+	  <None Remove="Resources\Image\Burger\teriBurger.jpg" />
+	  <None Remove="Resources\Image\Lamen\bulddak.jpg" />
+	  <None Remove="Resources\Image\Lamen\chineseLamen.jpg" />
+	  <None Remove="Resources\Image\Lamen\neoguri.jpg" />
+	  <None Remove="Resources\Image\Lamen\originalLamen.jpg" />
+	  <None Remove="Resources\Image\Lamen\sproutsLamen.jpg" />
+	  <None Remove="Resources\Image\Rice\bulgogiRice.jpg" />
+	  <None Remove="Resources\Image\Rice\chickenRice.jpg" />
+	  <None Remove="Resources\Image\Rice\eggRice.jpg" />
+	  <None Remove="Resources\Image\Rice\kimchiRice.jpg" />
+	  <None Remove="Resources\Image\Rice\shrimpRice.jpg" />
+	  <None Remove="Resources\Image\Rice\spamRice.jpg" />
+	  <None Remove="Resources\Image\SideMenu\cheese.jpg" />
+	  <None Remove="Resources\Image\SideMenu\kimchi.jpg" />
+	  <None Remove="Resources\Image\SideMenu\rice.jpg" />
+	  <None Remove="Resources\Image\SideMenu\takuan.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<!--Image Folder For each category-->
 		<!--Folder For Models-->
 		<Folder Include="Models\" />
@@ -17,6 +52,49 @@
 
 	<ItemGroup>
 		<PackageReference Include="MvvmLight" Version="5.4.1.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Resource Include="Resources\Image\Beverage\cider.jpg" />
+	  <Resource Include="Resources\Image\Beverage\cola.jpg" />
+	  <Resource Include="Resources\Image\Beverage\iceAmericano.jpg" />
+	  <Resource Include="Resources\Image\Beverage\mountainDew.jpg" />
+	  <Resource Include="Resources\Image\Beverage\orangeJuice.jpg" />
+	  <Resource Include="Resources\Image\Beverage\strawberryJuice.jpg" />
+	  <Resource Include="Resources\Image\Beverage\watermelonJuice.jpg" />
+	  <Resource Include="Resources\Image\Burger\bulgogiBurger.jpg" />
+	  <Resource Include="Resources\Image\Burger\cheeseBurger.jpg" />
+	  <Resource Include="Resources\Image\Burger\chickenBurger.jpg" />
+	  <Resource Include="Resources\Image\Burger\pizzaBurger.jpg" />
+	  <Resource Include="Resources\Image\Burger\shrimpBurger.jpg" />
+	  <Resource Include="Resources\Image\Burger\teriBurger.jpg" />
+	  <Resource Include="Resources\Image\Lamen\bulddak.jpg" />
+	  <Resource Include="Resources\Image\Lamen\chineseLamen.jpg" />
+	  <Resource Include="Resources\Image\Lamen\neoguri.jpg" />
+	  <Resource Include="Resources\Image\Lamen\originalLamen.jpg" />
+	  <Resource Include="Resources\Image\Lamen\sproutsLamen.jpg" />
+	  <Resource Include="Resources\Image\Rice\bulgogiRice.jpg" />
+	  <Resource Include="Resources\Image\Rice\chickenRice.jpg" />
+	  <Resource Include="Resources\Image\Rice\eggRice.jpg" />
+	  <Resource Include="Resources\Image\Rice\kimchiRice.jpg" />
+	  <Resource Include="Resources\Image\Rice\shrimpRice.jpg" />
+	  <Resource Include="Resources\Image\Rice\spamRice.jpg" />
+	  <Resource Include="Resources\Image\SideMenu\cheese.jpg" />
+	  <Resource Include="Resources\Image\SideMenu\kimchi.jpg" />
+	  <Resource Include="Resources\Image\SideMenu\rice.jpg" />
+	  <Resource Include="Resources\Image\SideMenu\takuan.jpg" />
+	  <Resource Include="Resources\Resource.resx">
+	    <Generator>ResXFileCodeGenerator</Generator>
+	    <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+	  </Resource>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Resources\Resource.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Resource.resx</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 </Project>
