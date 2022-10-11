@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!--Image Folder For each category-->
+		<!--Folder For Models-->
+		<Folder Include="Models\" />
+		<Folder Include="ViewModels\" />
+		<!--Folder For View Models-->
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="MvvmLight" Version="5.4.1.1" />
+	</ItemGroup>
+
+</Project>
