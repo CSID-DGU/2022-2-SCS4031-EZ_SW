@@ -9,14 +9,15 @@
              d:DesignHeight="1920" d:DesignWidth="1080">
 	<Grid>
 		<Grid.RowDefinitions>
-			<RowDefinition Height="156*"/>
-			<RowDefinition Height="1173*"/>
-			<RowDefinition Height="591*"/>
+			<RowDefinition Height="78*"/>
+			<RowDefinition Height="485*"/>
+			<RowDefinition Height="397*"/>
 		</Grid.RowDefinitions>
 		<components:Categories
 			Grid.Row="0"/>
-		<local:Beverages
-			Grid.Row="1"/>
+		<Grid x:Name="items" Grid.Row="1"/>
+
+
 		<components:CartLists
 			Grid.Row="2"/>
 	</Grid>

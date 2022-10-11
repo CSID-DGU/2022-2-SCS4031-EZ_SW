@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KIOSK_MVVM.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,8 +28,54 @@ namespace KIOSK_MVVM.Components
 
 		private void LamenButton_Click(object sender, RoutedEventArgs e)
 		{
+			Lamens lamens = new Lamens();
+			Grid buttons = (Grid)this.Parent;
+			KioskMainView mainView = (KioskMainView)buttons.Parent;
+			Grid items = (Grid)mainView.FindName("items");
+			items.Children.Clear();
+			items.Children.Add(lamens);
 
 		}
 
+		private void BeverageButton_Click(object sender, RoutedEventArgs e)
+		{
+			Beverages beverages = new Beverages();
+			Grid buttons = (Grid)this.Parent;
+			KioskMainView mainView = (KioskMainView)buttons.Parent;
+			Grid items = (Grid)mainView.FindName("items");
+			items.Children.Clear();
+			items.Children.Add(beverages);
+
+		}
+
+		private void SideMenuButton_Click(object sender, RoutedEventArgs e)
+		{
+			SideMenus sides = new SideMenus();
+			Grid buttons = (Grid)this.Parent;
+			KioskMainView mainView = (KioskMainView)buttons.Parent;
+			Grid items = (Grid)mainView.FindName("items");
+			items.Children.Clear();
+			items.Children.Add(sides);
+		}
+
+		private void BurgerButton_Click(object sender, RoutedEventArgs e)
+		{
+			Burgers burgers = new Burgers();
+			Grid buttons = (Grid)this.Parent;
+			KioskMainView mainView = (KioskMainView)buttons.Parent;
+			Grid items = (Grid)mainView.FindName("items");
+			items.Children.Clear();
+			items.Children.Add(burgers);
+		}
+
+		private void RiceButton_Click(object sender, RoutedEventArgs e)
+		{
+			Rices rices = new Rices();
+			Grid buttons = (Grid)this.Parent;
+			KioskMainView mainView = (KioskMainView)buttons.Parent;
+			Grid items = (Grid)mainView.FindName("items");
+			items.Children.Clear();
+			items.Children.Add(rices);
+		}
 	}
 }

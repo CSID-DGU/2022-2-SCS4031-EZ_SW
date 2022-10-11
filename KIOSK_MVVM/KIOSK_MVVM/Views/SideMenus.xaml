@@ -6,7 +6,48 @@
              xmlns:local="clr-namespace:KIOSK_MVVM.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
-    </Grid>
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="*"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+		<Grid 
+			Grid.Row="0"
+			Grid.Column="0">
+			<Button x:Name="cheeseButton">
+				<Image Source="/Resources/Image/sideMenu/cheese.jpg"/>
+
+			</Button>
+		</Grid>
+		<Grid 
+			Grid.Row="0"
+			Grid.Column="1">
+			<Button x:Name="kimchiButton">
+				<Image Source="/Resources/Image/sideMenu/kimchi.jpg"/>
+			</Button>
+		</Grid>
+		<Grid
+			Grid.Row="0"
+			Grid.Column="2">
+			<Button x:Name="riceeggButton">
+				<Image Source="/Resources/Image/sideMenu/rice.jpg"/>
+			</Button>
+		</Grid>
+		<Grid
+			Grid.Row="0"
+			Grid.Column="3">
+			<Button x:Name="takuanButton">
+				<Image Source="../Resources/Image/sideMenu/takuan.jpg"/>
+			</Button>
+		</Grid>
+
+	</Grid>
 </UserControl>

@@ -20,9 +20,12 @@ namespace KIOSK_MVVM.Views
 	/// </summary>
 	public partial class KioskMainView : UserControl
 	{
+
 		public KioskMainView()
 		{
 			InitializeComponent();
+
 		}
 	}
+
 }

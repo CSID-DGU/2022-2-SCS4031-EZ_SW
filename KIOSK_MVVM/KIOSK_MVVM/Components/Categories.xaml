@@ -7,23 +7,27 @@
              mc:Ignorable="d" 
              d:DesignHeight="156" d:DesignWidth="1080">
 	<Grid>
-		<Border BorderBrush="Blue" BorderThickness="1"/>
+		<Border BorderBrush="Blue" BorderThickness="3"/>
 		<Button x:Name="LamenButton" 
 				Grid.Column="0"
 				Content="라면" Click="LamenButton_Click"/>
-		<Button x:Name="ChickenButton"
+		<Button x:Name="RiceButton"
+				Click="RiceButton_Click"
 				Grid.Column="1" 
 				Content="밥" 
 				/>
 		<Button x:Name="BurgerButton" 
+				Click="BurgerButton_Click"
 				Grid.Column="2" 
 				Content="버거" 
 				/>
 		<Button x:Name="SideMenuButton" 
+				Click="SideMenuButton_Click"
 				Grid.Column="3" 
 				Content="사이드 메뉴" 
 				/>
 		<Button x:Name="BeverageButton"
+				Click="BeverageButton_Click"
 				Grid.Column="4" 
 				Content="음료" 
 				/>

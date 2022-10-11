@@ -24,8 +24,10 @@ namespace KIOSK_MVVM
 		public MainWindow()
 		{
 			KioskMainView kioskMainView = new KioskMainView();
-
+			Lamens lamens = new Lamens();
 			kioskMainView.InitializeComponent();
+			Grid items = (Grid)kioskMainView.FindName("items");
+			items.Children.Add(lamens);
 		}
 	}
 }
