@@ -1,0 +1,1 @@
+nircmd sendkey q press

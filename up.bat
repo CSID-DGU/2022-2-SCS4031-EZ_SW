@@ -1,0 +1,1 @@
+nircmd sendkey up press

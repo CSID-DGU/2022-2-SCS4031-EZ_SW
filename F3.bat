@@ -1,0 +1,1 @@
+nircmd sendkey F3 press

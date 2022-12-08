@@ -1,0 +1,1 @@
+conda activate abc && python C:\Users\user\Desktop\folder\FaceDetection.py
